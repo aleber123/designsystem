@@ -252,55 +252,53 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--text-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .main-content {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .component-demo {
   background: white;
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  flex: 1;
-  min-width: 300px;
+  margin-bottom: 1.5rem;
+  width: 100%;
   max-width: 500px;
   box-sizing: border-box;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .form-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
-  max-width: 350px;
+  max-width: 100%;
 }
 
 .input-group {
@@ -310,62 +308,11 @@ h1 {
 h2 {
   width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--text-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   border-bottom: 2px solid var(--border-color);
-  padding-bottom: 1rem;
-}
-
-.variant-group, .input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-h3 {
-  font-size: 1rem;
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
-}
-
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.toggle-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.toggle-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: var(--surface-color, white);
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.component-demo {
-  margin-bottom: 2rem;
-  width: 100%;
-  max-width: 200px;
-}
-
-.button-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .variant-group {
@@ -376,34 +323,63 @@ h3 {
   background-color: var(--surface-color, white);
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .modal-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 .form-actions {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-content: flex-end;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
+@media (min-width: 768px) {
+  .app {
+    padding: 2rem;
   }
-  
+
+  header {
+    margin-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-content {
+    gap: 2rem;
+  }
+
   .component-demo {
-    width: 100%;
+    padding: 2rem;
+  }
+
+  .button-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-actions {
+    gap: 1rem;
   }
 }
 </style>
