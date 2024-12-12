@@ -40,7 +40,7 @@ const validateEmail = () => {
 <template>
   <div class="app">
     <header>
-      <h1>Nordic Design System</h1>
+      <h1>Design System</h1>
       <p>Ett modernt och tillgängligt komponentbibliotek</p>
     </header>
 
